@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:interface xsi:type="con:RestService" id="f74ede28-4310-4c2a-87c3-0d74871df079" wadlVersion="http://wadl.dev.java.net/2009/02" name="Createuser" type="rest" xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<con:interface xsi:type="con:RestService" id="f74ede28-4310-4c2a-87c3-0d74871df079" wadlVersion="http://wadl.dev.java.net/2009/02" name="CreateUser" type="rest" xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <con:settings>
     <con:setting id="f74ede28-4310-4c2a-87c3-0d74871df079fileName">CreateUser</con:setting>
   </con:settings>
