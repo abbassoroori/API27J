@@ -1,0 +1,7 @@
+GetAllUsers\Users.xml
+GetUserByParam\Byparam.xml
+CreateUser\Users.xml
+DeleteUserByParam\Byparam.xml
+EndToEndAPITest\CreateNweCustomer.xml
+EndToEndAPITest\GetNewCustomer.xml
+EndToEndAPITest\DeleteNewCustomer.xml

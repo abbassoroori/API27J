@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite id="009d8158-92d1-4754-b42a-f7051fa4781b" name="EndToEndAPITest" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="009d8158-92d1-4754-b42a-f7051fa4781bfileName">EndToEndAPITest</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:runType>SEQUENTIAL</con:runType>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testSuite>

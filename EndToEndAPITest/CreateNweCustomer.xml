@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="d42ab58c-263b-4c1b-8c6e-469fad840589" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="CreateNweCustomer" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="d42ab58c-263b-4c1b-8c6e-469fad840589fileName">CreateNweCustomer</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="datasource" name="DataSource" id="c7b376e4-0b17-4829-b045-f47b0c261a97">
+    <con:settings/>
+    <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dataSource type="Data Generator">
+        <con:configuration>
+          <generatedDataCount>10</generatedDataCount>
+          <generatorsTotalNumber>10</generatorsTotalNumber>
+          <lastSelectedProperty>6</lastSelectedProperty>
+          <GeneratorType0>NAME</GeneratorType0>
+          <PropertyName0>firstName</PropertyName0>
+          <repetitionCountfirstName>0</repetitionCountfirstName>
+          <repeatValuesfirstName>false</repeatValuesfirstName>
+          <NameTypeName0>FirstName</NameTypeName0>
+          <NameGenderName0>Any</NameGenderName0>
+          <GeneratorType1>NAME</GeneratorType1>
+          <PropertyName1>lastName</PropertyName1>
+          <repetitionCountlastName>0</repetitionCountlastName>
+          <repeatValueslastName>false</repeatValueslastName>
+          <NameTypeName1>LastName</NameTypeName1>
+          <NameGenderName1>Any</NameGenderName1>
+          <GeneratorType2>NAME</GeneratorType2>
+          <PropertyName2>middleName</PropertyName2>
+          <repetitionCountmiddleName>0</repetitionCountmiddleName>
+          <repeatValuesmiddleName>false</repeatValuesmiddleName>
+          <NameTypeName2>FirstName</NameTypeName2>
+          <NameGenderName2>Any</NameGenderName2>
+          <GeneratorType3>SET</GeneratorType3>
+          <PropertyName3>suffix</PropertyName3>
+          <repetitionCountsuffix>0</repetitionCountsuffix>
+          <repeatValuessuffix>false</repeatValuessuffix>
+          <ValueFromSetIsSequenceValuesuffix>false</ValueFromSetIsSequenceValuesuffix>
+          <ValueFromSetStringssuffix>Junior</ValueFromSetStringssuffix>
+          <ValueFromSetStringssuffix>Senior</ValueFromSetStringssuffix>
+          <ValueFromSetStringssuffix>Jr</ValueFromSetStringssuffix>
+          <ValueFromSetStringssuffix/>
+          <GeneratorType4>SET</GeneratorType4>
+          <PropertyName4>gender</PropertyName4>
+          <repetitionCountgender>0</repetitionCountgender>
+          <repeatValuesgender>false</repeatValuesgender>
+          <ValueFromSetIsSequenceValuegender>false</ValueFromSetIsSequenceValuegender>
+          <ValueFromSetStringsgender>Male</ValueFromSetStringsgender>
+          <ValueFromSetStringsgender>Female</ValueFromSetStringsgender>
+          <ValueFromSetStringsgender>Sample 3</ValueFromSetStringsgender>
+          <GeneratorType5>SET</GeneratorType5>
+          <PropertyName5>title</PropertyName5>
+          <repetitionCounttitle>0</repetitionCounttitle>
+          <repeatValuestitle>false</repeatValuestitle>
+          <ValueFromSetIsSequenceValuetitle>false</ValueFromSetIsSequenceValuetitle>
+          <ValueFromSetStringstitle>Mr</ValueFromSetStringstitle>
+          <ValueFromSetStringstitle>Mrs</ValueFromSetStringstitle>
+          <ValueFromSetStringstitle>Sample 3</ValueFromSetStringstitle>
+          <GeneratorType6>SET</GeneratorType6>
+          <PropertyName6>EmplloymentStatus</PropertyName6>
+          <repetitionCountEmplloymentStatus>0</repetitionCountEmplloymentStatus>
+          <repeatValuesEmplloymentStatus>false</repeatValuesEmplloymentStatus>
+          <ValueFromSetIsSequenceValueEmplloymentStatus>false</ValueFromSetIsSequenceValueEmplloymentStatus>
+          <ValueFromSetStringsEmplloymentStatus>Jobless</ValueFromSetStringsEmplloymentStatus>
+          <ValueFromSetStringsEmplloymentStatus>Student</ValueFromSetStringsEmplloymentStatus>
+          <ValueFromSetStringsEmplloymentStatus>Sample 3</ValueFromSetStringsEmplloymentStatus>
+          <GeneratorType7>SET</GeneratorType7>
+          <PropertyName7>perferLangugae</PropertyName7>
+          <repetitionCountperferLangugae>0</repetitionCountperferLangugae>
+          <repeatValuesperferLangugae>false</repeatValuesperferLangugae>
+          <ValueFromSetIsSequenceValueperferLangugae>false</ValueFromSetIsSequenceValueperferLangugae>
+          <ValueFromSetStringsperferLangugae>English</ValueFromSetStringsperferLangugae>
+          <ValueFromSetStringsperferLangugae>Farsi</ValueFromSetStringsperferLangugae>
+          <ValueFromSetStringsperferLangugae>Spanish</ValueFromSetStringsperferLangugae>
+          <ValueFromSetStringsperferLangugae/>
+          <GeneratorType8>TIME</GeneratorType8>
+          <PropertyName8>dob</PropertyName8>
+          <repetitionCountdob>0</repetitionCountdob>
+          <repeatValuesdob>false</repeatValuesdob>
+          <DateTimeDataGeneratorCustomFormatdob/>
+          <DateTimeDataGeneratorFormatdob>YYYY-MM-DDTHH:mm:ssZ (ISO-8601)</DateTimeDataGeneratorFormatdob>
+          <DateTimeDataGeneratorIsSequentdob>false</DateTimeDataGeneratorIsSequentdob>
+          <DateTimeDataGeneratorStepDaysdob>1</DateTimeDataGeneratorStepDaysdob>
+          <DateTimeDataGeneratorStepHoursdob>1</DateTimeDataGeneratorStepHoursdob>
+          <DateTimeDataGeneratorStepMinsdob>1</DateTimeDataGeneratorStepMinsdob>
+          <DateTimeDataGeneratorStepSecondsdob>1</DateTimeDataGeneratorStepSecondsdob>
+          <DateTimeDataGeneratorMinDatedob>442786030842</DateTimeDataGeneratorMinDatedob>
+          <DateTimeDataGeneratorMaxDatedob>947707630842</DateTimeDataGeneratorMaxDatedob>
+          <GeneratorType9>SET</GeneratorType9>
+          <PropertyName9>mitiramStatus</PropertyName9>
+          <repetitionCountmitiramStatus>0</repetitionCountmitiramStatus>
+          <repeatValuesmitiramStatus>false</repeatValuesmitiramStatus>
+          <ValueFromSetIsSequenceValuemitiramStatus>false</ValueFromSetIsSequenceValuemitiramStatus>
+          <ValueFromSetStringsmitiramStatus>Single</ValueFromSetStringsmitiramStatus>
+          <ValueFromSetStringsmitiramStatus>Married</ValueFromSetStringsmitiramStatus>
+          <ValueFromSetStringsmitiramStatus>Sample 3</ValueFromSetStringsmitiramStatus>
+          <escapeSpaceSequence/>
+        </con:configuration>
+      </con:dataSource>
+      <con:shared>true</con:shared>
+      <con:restartShared>true</con:restartShared>
+      <con:property>firstName</con:property>
+      <con:property>lastName</con:property>
+      <con:property>middleName</con:property>
+      <con:property>suffix</con:property>
+      <con:property>gender</con:property>
+      <con:property>title</con:property>
+      <con:property>dob</con:property>
+      <con:property>mitiramStatus</con:property>
+      <con:property>EmplloymentStatus</con:property>
+      <con:property>perferLangugae</con:property>
+      <con:restartOnRun>true</con:restartOnRun>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="REST Request" id="797a6db5-75e6-442b-8e61-487c1e4f1410">
+    <con:settings/>
+    <con:config service="CreateUser" resourcePath="/jpa/users" methodName="Users" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="REST Request" id="7fe9a55c-6132-4da0-9119-2a91207fc4ee" mediaType="application/json" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>http://tekschool-test-env.herokuapp.com</con:endpoint>
+        <con:request>{\r
+   "birthDate" : "${DataSource#dob}",\r
+   "employmentStatus" : "${DataSource#EmplloymentStatus}",\r
+   "firstName" : "${DataSource#firstName}",\r
+   "gender" : "${DataSource#gender}",\r
+   "languagePref" : "${DataSource#perferLangugae}",\r
+   "lastName" : "${DataSource#lastName}",\r
+   "maritalStatus" : "${DataSource#mitiramStatus}",\r
+   "middleName" : "${DataSource#middleName}",\r
+   "suffix" : "${DataSource#suffix}",\r
+   "title" : "${DataSource#title}."\r
+}</con:request>
+        <con:originalUri>http://tekschool-test-env.herokuapp.com/jpa/users</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="c12cf10b-8ac7-4876-815f-acceeebde7f7" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="4d62b4c6-f364-42fb-9cbb-cedbad0781bc" name="Response SLA">
+          <con:configuration>
+            <SLA>1000</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="jdbc" name="JDBC Request" id="0c12fce2-12ad-47b7-b0e9-2ada837518a3" disabled="true">
+    <con:settings>
+      <con:setting id="prettyPrintResponse">true</con:setting>
+    </con:settings>
+    <con:config xsi:type="con:JdbcRequestTestStep" convertColumnNamesToUpperCase="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dbConnectionName>aa</con:dbConnectionName>
+      <con:driver>com.mysql.jdbc.Driver</con:driver>
+      <con:connectionString>jdbc:mysql://us-cdbr-east-02.cleardb.com:3306/heroku_2530dcf8cf9e755?user=be8a5abcd4f8c4&amp;password=PASS_VALUE</con:connectionString>
+      <con:password>46eade06</con:password>
+      <con:connectionProperties/>
+      <con:query>select * from user
+where id = ${REST Request#Response#$['id']}</con:query>
+      <con:properties/>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

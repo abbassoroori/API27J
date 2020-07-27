@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:interface xsi:type="con:RestService" id="97f41238-e343-4a47-8224-5f60c3a7533a" wadlVersion="http://wadl.dev.java.net/2009/02" name="DeleteUserByParam" type="rest" xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <con:settings>
+    <con:setting id="97f41238-e343-4a47-8224-5f60c3a7533afileName">DeleteUserByParam</con:setting>
+  </con:settings>
+  <con:definitionCache type="TEXT" rootPart=""/>
+  <con:endpoints>
+    <con:endpoint>http://tekschool-test-env.herokuapp.com</con:endpoint>
+  </con:endpoints>
+</con:interface>

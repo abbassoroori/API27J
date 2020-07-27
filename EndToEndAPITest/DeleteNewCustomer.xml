@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="cc707ccf-a204-488c-ad89-d14e634b3ddd" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="DeleteNewCustomer" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="cc707ccf-a204-488c-ad89-d14e634b3dddfileName">DeleteNewCustomer</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="REST Request" id="aad96ac5-8749-4c05-9899-dc6e048c422e">
+    <con:settings/>
+    <con:config service="DeleteUserByParam" resourcePath="/jpa/users/byparam" methodName="Byparam" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="REST Request" id="e19fdafa-a13d-44a9-98d1-29e5c86d9a6e" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>http://tekschool-test-env.herokuapp.com</con:endpoint>
+        <con:request/>
+        <con:originalUri>http://tekschool-test-env.herokuapp.com/jpa/users/byparam</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="b9d6510a-b011-4d09-8d2c-5c23fa7923d9" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="b7b81abb-fd45-4fc9-a5ff-3cf7fc621724" name="Response SLA">
+          <con:configuration>
+            <SLA>200</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="id" value="${#[EndToEndAPITest#CreateNweCustomer#REST Request]#Response#$['id']}"/>
+        </con:parameters>
+        <con:parameterOrder>
+          <con:entry>id</con:entry>
+        </con:parameterOrder>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

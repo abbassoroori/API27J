@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="Byparam" path="/jpa/users/byparam" id="bf8f5bea-70dc-493b-8cec-19fa451e1bdf" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="bf8f5bea-70dc-493b-8cec-19fa451e1bdffileName">Byparam</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Byparam" id="227a44fa-912e-47b0-9b1f-659475c7123a" method="GET">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>id</con:name>
+        <con:value/>
+        <con:style>QUERY</con:style>
+        <con:default/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:element xmlns:byp="http://tekschool-test-env.herokuapp.com/jpa/users/byparam">byp:Response</con:element>
+    </con:representation>
+    <con:request name="Request 1" id="6d9629c1-4f5b-4fec-95e6-8b2356759c48" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://tekschool-test-env.herokuapp.com</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:parameterOrder>
+        <con:entry>id</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>

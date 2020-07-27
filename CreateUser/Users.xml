@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="Users" path="/jpa/users" id="b1faabf8-63e8-469a-b815-6e23b077d176" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="b1faabf8-63e8-469a-b815-6e23b077d176fileName">Users</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Users" id="4ad1f803-7dd7-4870-b026-22880c49025b" method="POST">
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:representation type="FAULT">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:element xmlns:user="http://tekschool-test-env.herokuapp.com/jpa/users">user:Fault</con:element>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:element xmlns:user="http://tekschool-test-env.herokuapp.com/jpa/users">user:Response</con:element>
+    </con:representation>
+    <con:request name="Request 1" id="7fe9a55c-6132-4da0-9119-2a91207fc4ee" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://tekschool-test-env.herokuapp.com</con:endpoint>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

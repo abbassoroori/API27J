@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="Users" path="/jpa/users" id="39dee1a9-3e56-44f0-9655-783575f10d47" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="39dee1a9-3e56-44f0-9655-783575f10d47fileName">Users</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Users" id="6547bb27-bf33-419a-baa0-3d3466a3119a" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:element>Response</con:element>
+    </con:representation>
+    <con:request name="Request 1" id="49e6f1cb-174e-4dd8-878d-0f325e82fd51" mediaType="application/json">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>http://tekschool-test-env.herokuapp.com</con:endpoint>
+      <con:request/>
+      <con:originalUri>http://tekschool-test-env.herokuapp.com/jpa/users</con:originalUri>
+      <con:credentials>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

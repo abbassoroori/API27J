@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="e06c839e-146a-47e1-8be2-75eb146a2123" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="GetNewCustomer" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="e06c839e-146a-47e1-8be2-75eb146a2123fileName">GetNewCustomer</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="REST Request" id="cea4dece-1a35-4e8b-a4a9-282353de524f">
+    <con:settings/>
+    <con:config service="GetUserByParam" resourcePath="/jpa/users/byparam" methodName="Byparam" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="REST Request" id="6d9629c1-4f5b-4fec-95e6-8b2356759c48" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>http://tekschool-test-env.herokuapp.com</con:endpoint>
+        <con:request/>
+        <con:originalUri>http://tekschool-test-env.herokuapp.com/jpa/users/byparam</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="26cf90fe-8cac-46e1-8fbe-08894cc0a462" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="0aa988ee-c5cf-4dcc-a803-b6c88ff92842" name="Response SLA">
+          <con:configuration>
+            <SLA>200</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="id" value="${#[EndToEndAPITest#CreateNweCustomer#REST Request]#Response#$['id']}"/>
+        </con:parameters>
+        <con:parameterOrder>
+          <con:entry>id</con:entry>
+        </con:parameterOrder>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="jdbc" name="JDBC Request" id="3b3e3fec-8b39-43b9-9160-9a31b14586a5" disabled="true">
+    <con:settings>
+      <con:setting id="prettyPrintResponse">true</con:setting>
+    </con:settings>
+    <con:config xsi:type="con:JdbcRequestTestStep" convertColumnNamesToUpperCase="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dbConnectionName>aa</con:dbConnectionName>
+      <con:driver>com.mysql.jdbc.Driver</con:driver>
+      <con:connectionString>jdbc:mysql://us-cdbr-east-02.cleardb.com:3306/heroku_2530dcf8cf9e755?user=be8a5abcd4f8c4&amp;password=PASS_VALUE</con:connectionString>
+      <con:password>46eade06</con:password>
+      <con:connectionProperties/>
+      <con:query>select * from user
+where id=${#[EndToEndAPITest#CreateNweCustomer#REST Request]#Response#$['id']}</con:query>
+      <con:properties/>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>
